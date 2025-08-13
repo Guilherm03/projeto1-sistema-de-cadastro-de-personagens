@@ -1,9 +1,9 @@
 class Personagem {
-
+    #hp
     constructor(nome, classe, psVida) {
         this.nome = nome
         this.classe = classe
-        this.psVida = psVida
+        this.#hp = psVida
     }
 
     atacar(atkPower) {
@@ -22,7 +22,7 @@ class Personagem {
             ===============================
             Nome: ${this.nome}
             Classe: ${this.classe}
-            Ponstos de Saúde: ${this.psVida}
+            Ponstos de Saúde: ${this.#hp}
             `)
     }
 }
